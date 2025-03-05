@@ -1,8 +1,7 @@
-###  DATE: 
-
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+###  DATE: 05.03.25
+###  NAME: Aaliya Fathima.M
+###  ROLL NO : 212223230001
+###  DEPARTMENT: AIDS
 
 
 
@@ -87,12 +86,28 @@ The main features of LPC2148 include the following.
 
 ## STM 32 CUBE PROGRAM :
 
+int main(void)
+{
+  HAL_Init();
+  SystemClock_Config();
+  MX_GPIO_Init();#
+  while (1)
+  {
 
-
+	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
+	  HAL_Delay(1000);
+	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
+	  HAL_Delay(1000);
+  }
 
 
 ## OUTPUT  :
- 
+## ON STATE:
+![IOT EXP-1](https://github.com/user-attachments/assets/c979fa41-60d0-4928-b5c6-3834bbc05a17)
+
+## OFF STATE:
+ ![IOT EXP 1 OFF](https://github.com/user-attachments/assets/5180c505-e88f-4ec0-a9b1-4723864047b9)
+
  
  
  
